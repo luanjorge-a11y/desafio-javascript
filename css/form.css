@@ -52,3 +52,17 @@ button {
 .titulo {
     margin-left: 8px;
 }
+.textosLGPD {
+    display: block;
+    width: 300px;
+    margin: 8px;
+    font-size: 13px;
+    padding: 5px;
+    text-align: justify;
+}
+#enviarBtn{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    cursor: auto;
+}

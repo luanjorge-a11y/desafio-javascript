@@ -58,3 +58,24 @@ document.addEventListener('DOMContentLoaded', function () {
         check1.addEventListener('change', function () { bloquear(check1); });
     }
 });
+function bloquear(check){
+    const enviarBtn = document.getElementById('enviarBtn');
+    if(check.checked){
+        enviarBtn.disabled = false;
+        enviarBtn.style.opacity = '1';
+        enviarBtn.style.cursor = 'pointer';
+         enviarBtn.style.backgroundColor = '#1351dB';
+        enviarBtn.style.color = 'black';
+        enviarBtn.style.border = '2px solid black';
+        enviarBtn.style.cursor = 'auto';
+       
+    } else {
+        enviarBtn.disabled = true;
+        enviarBtn.style.opacity = '0.5';
+        enviarBtn.style.cursor = 'not-allowed';
+         enviarBtn.style.backgroundColor = 'transparent';
+        enviarBtn.style.color = 'black';
+        enviarBtn.style.border = '2px solid black';
+        enviarBtn.style.cursor = 'auto';
+    }
+}
