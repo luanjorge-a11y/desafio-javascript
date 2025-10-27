@@ -50,11 +50,22 @@
                         <option>Reclamação</option>
                         <option>Solicitação</option>
                     </select>
-
+                    
                     <textarea name="mensagem" placeholder="Digite sua mensagem aqui!" class="fordform"
-                        required></textarea>
-
-                    <button type="submit" id="enviarBtn">Enviar</button>
+                    required></textarea>
+                  
+                    <div class="textosLGPD">
+                    Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. A qualquer momento, será possível editar ou remover tais dados.
+                    </div>
+                    <div class="textosLGPD">
+                        <input type="checkbox" name="" id="check1" onchange="bloquear(this);">
+                    <label for="check1">Sim, aceito os <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank" rel="noopener noreferrer">Termos e Condições</a>!</label>
+                </div>
+                <div class="textosLGPD">
+                    <input type="checkbox" name="" id="check2">
+                    <label for="check2">Sim, aceito receber descontos e novidades!</label>
+                </div>
+                <button type="submit" id="enviarBtn">Enviar</button>
                 </form>
             </div>
         </div>
